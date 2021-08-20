@@ -1,0 +1,19 @@
+.info{
+   display: flex;
+   justify-content: space-between;
+   color: var(--first-color);
+   font-size: .900rem;
+   padding-top: .5rem;
+}
+
+.more{
+   color: var(--first-color);
+   border: 1px solid var(--first-color-low);
+   padding: .2rem .5rem;
+   font-size: .825rem;
+}
+
+
+.more:hover{
+   border: 1px solid var(--first-color);
+}

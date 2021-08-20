@@ -1,0 +1,15 @@
+.footer{
+   background-color: var(--bg-collor-footer);
+   padding: 2rem 0 10rem 0;
+   color: white;
+   text-align: center;;
+}
+
+.footer p{
+   opacity: .6;
+}
+
+.footer a{
+   color: white;
+   border-bottom: 1px solid var(--first-color-low);
+}

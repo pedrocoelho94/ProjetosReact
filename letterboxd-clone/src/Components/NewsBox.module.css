@@ -1,0 +1,59 @@
+.box {
+   display: grid;
+   grid-template-columns: 35% 65%;
+}
+
+.image {
+   height: 11rem;
+   object-position: center;
+}
+
+.box img {
+   height: 100%;
+}
+
+.description {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 2rem;
+   background-color: var(--bg-box);
+   column-gap: 2;
+}
+
+.description h3 {
+   font-size: 1.5rem;
+   margin-bottom: 0.5rem;
+}
+
+.description p {
+   font-size: 0.925rem;
+   color: var(--first-color);
+}
+
+@media screen and (max-width: 900px) {
+   .image {
+      height: 14rem;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .box {
+      grid-template-columns: 1fr;
+   }
+
+   .box img {
+      object-fit: cover;
+      width: 100%;
+   }
+}
+
+.description span{
+   font-weight: bold;
+   text-transform: uppercase;
+   color: var(--first-color-hover)
+}
+
+.description span:hover{
+   color: var(--blue)
+}

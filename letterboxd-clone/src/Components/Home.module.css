@@ -1,0 +1,11 @@
+.home{
+   padding-top: 2rem;
+}
+
+.subtitle{
+   font-weight: 300;
+   text-align: center;
+   color: var(--first-color);
+}
+
+

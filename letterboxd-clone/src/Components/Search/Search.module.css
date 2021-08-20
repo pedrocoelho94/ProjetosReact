@@ -1,0 +1,62 @@
+.search{
+   padding-top: 2rem;
+}
+
+.results{
+   display: flex;
+   height: 125px;
+   gap: 2rem;
+   margin-bottom: 2rem;
+}
+
+.poster{
+   height: 125px;
+   
+}
+
+.poster img{
+   height: 100%;
+   border: 1px solid var(--first-color-low);
+   border-radius: 4px;
+}
+
+.poster img:hover{
+   border-color: var(--green-light);
+}
+
+.info{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.title{
+   color: white;
+   margin-top: -1rem;
+   font-size: 1.4rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-bottom: 1rem;
+}
+
+.title:hover{
+   color: var(--blue)
+}
+
+.subtitle{
+   font-size: .975rem;
+   color: var(--first-color);
+}
+
+.filmTitles{
+   font-size: .825rem;
+   display: inline-block;
+   margin: 0.2rem .2rem;
+   background-color: #303840;
+   color: var(--first-color);
+   padding: .3rem .5rem;
+   border-radius: 3px;
+}
+
+.filmTitles:hover{
+   color: var(--first-color-hover);
+}

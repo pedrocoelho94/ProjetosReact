@@ -1,0 +1,17 @@
+.genres{
+   margin-bottom: 2rem;
+}
+
+.genre{
+   font-size: .825rem;
+   display: inline-block;
+   margin: 0.2rem .2rem;
+   background-color: #303840;
+   color: var(--first-color);
+   padding: .3rem .5rem;
+   border-radius: 3px;
+}
+
+.genres:hover{
+   color: var(--first-color-hover);
+}

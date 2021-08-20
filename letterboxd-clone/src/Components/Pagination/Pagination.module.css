@@ -1,0 +1,23 @@
+.pagination {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   padding-top: 2rem;
+   margin-bottom: 4rem;
+}
+
+.item {
+   color: var(--first-color);
+   padding: 0.5rem .75rem;
+   background-color: var(--bg-box);
+   border: 1px solid transparent;
+}
+
+.item:hover, .active{
+   border: 1px solid var(--first-color);
+   color: var(--first-color);
+}
+
+.item:focus{
+   outline: none;
+}

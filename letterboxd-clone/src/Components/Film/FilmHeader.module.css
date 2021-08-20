@@ -1,0 +1,39 @@
+.nav {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 1rem;
+   font-size: 0.785rem;
+   border-bottom: 1px solid var(--first-color-low);
+   height: 100%;
+   padding-bottom: 0.4rem;
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+}
+
+.nav h3 {
+   position: relative;
+   margin-bottom: 0;
+   padding-bottom: 0;
+   font-weight: 500;
+   text-transform: uppercase;
+   color: var(--green);
+}
+
+nav .active h3 {
+   color: white;
+}
+
+nav .active h3::after {
+   content: '';
+   width: 100%;
+   height: 1px;
+   background-color: white;
+   position: absolute;
+   left: 0;
+   bottom: -.45rem;
+   transition: width 0.3s;
+}
