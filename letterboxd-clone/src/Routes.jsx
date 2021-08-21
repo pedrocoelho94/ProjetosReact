@@ -15,10 +15,9 @@ const MainRoutes = () => {
          <Route path="/profile" element={<Profile />} />
          <Route path="film/*" element={<Film />} />
          <Route path="actor/*" element={<Actor />} />
-         {/* <Route path="search/:search" element={<Search />} /> */}
+         <Route path="search/:search" element={<Search />} />
          <Route path="search/:search/page/:page" element={<Search />} />
          <Route path="/*" element={<PageNotFound />} />
-
       </Routes>
    )
 }
