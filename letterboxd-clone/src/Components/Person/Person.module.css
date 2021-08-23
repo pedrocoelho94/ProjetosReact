@@ -1,0 +1,39 @@
+.person{
+   display: grid;
+   grid-template-columns: 75% auto;
+   gap: 2rem;
+}
+
+.aside{
+}
+
+.aside img{
+   border: 1px solid var(--first-color-low);
+   border-radius: 4px;
+   width: 100%;
+   margin-bottom: 1rem;
+}
+
+.description{
+   font-size: .825rem;
+   color: var(--first-color);
+   line-height: 1.5;
+   margin-bottom: 2rem;
+}
+
+span{
+   color: var(--first-color);
+   font-size: .875rem;
+}
+
+.more{
+   
+   border: 1px solid var(--first-color-low);
+   padding: .2rem .5rem;
+   font-size: .825rem;
+}
+
+
+.more:hover{
+   border: 1px solid var(--first-color);
+}

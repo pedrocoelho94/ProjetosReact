@@ -8,7 +8,7 @@ const Director = props => {
             .filter(item => item.job === 'Director')
             .map(director => (
                <span key={director.id}>
-                  <Link to={`/actor/${director.id}`}>{director.name}</Link>
+                  <Link to={`/../../director/${director.id}`}>{director.name}</Link>
                </span>
             ))}
       </>

@@ -9,7 +9,7 @@ const Crew = ({ crew }) => {
             {crew.crew
                .filter(item => item.job === job)
                .map(item => (
-                  <Link key={`${link}-${item.id}`} to={`/${link}/${item.id}`}>
+                  <Link key={`${link}-${item.id}`} to={`/../../${link}/${item.id}`}>
                      {' '}
                      <li className={styles.crew}>{item.name}</li>
                   </Link>
@@ -24,7 +24,7 @@ const Crew = ({ crew }) => {
             {crew.crew
                .filter(item => item.department === job)
                .map(item => (
-                  <Link key={`${link}-${item.id}`} to={`/${link}/${item.id}`}>
+                  <Link key={`${link}-${item.id}`} to={`/../../${link}/${item.id}`}>
                      {' '}
                      <li title={item.character} className={styles.crew}>
                         {item.name}

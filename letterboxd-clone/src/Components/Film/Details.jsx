@@ -7,7 +7,7 @@ const Details = ({ details }) => {
       return (
          <ul>
             {details.production_companies.map(item => (
-               <Link key={item.name} to={`/${link}/${item.id}`}>
+               <Link key={item.name} to={`/../../${link}/${item.id}`}>
                   {' '}
                   <li className={styles.info}>{item.name}</li>
                </Link>
@@ -22,7 +22,7 @@ const Details = ({ details }) => {
             {details.spoken_languages.map(item => (
                <Link
                   key={item.name}
-                  to={`/${link}/${item.english_name.toLowerCase()}`}
+                  to={`/../${link}/${item.english_name.toLowerCase()}`}
                >
                   {' '}
                   <li className={styles.info}>{item.english_name}</li>

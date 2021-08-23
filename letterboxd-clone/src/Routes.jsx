@@ -4,9 +4,9 @@ import { Routes, Route } from 'react-router'
 import Home from './Components/Home'
 import Profile from './Components/Profile/Profile'
 import Film from './Components/Film/Index'
-import Actor from './Components/Actor/Index'
 import Search from './Components/Search/Search'
 import PageNotFound from './Components/PageNotFound'
+import Person from './Components/Person/Person'
 
 const MainRoutes = () => {
    return (
@@ -14,8 +14,9 @@ const MainRoutes = () => {
          <Route path="/" element={<Home />} />
          <Route path="/profile" element={<Profile />} />
          <Route path="film/*" element={<Film />} />
-         <Route path="actor/*" element={<Actor />} />
-         <Route path="search/:search" element={<Search />} />
+         <Route path="/:job/:id" element={<Person />} />
+         {/* <Route path="search/:search" element={<Search />} /> */}
+         <Route path="search/:search/page/:page" element={<Search />} />
          <Route path="search/:search/page/:page" element={<Search />} />
          <Route path="/*" element={<PageNotFound />} />
       </Routes>

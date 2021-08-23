@@ -32,7 +32,7 @@
 
 .info {
    display: grid;
-   grid-template-columns: 1fr auto;
+   grid-template-columns: 200px auto;
    gap: 2rem;
    margin-top: 0rem;
 }
@@ -57,7 +57,12 @@
    color: var(--blue);
 }
 
+.poster{
+   width: 100%;
+}
+
 .poster img {
+   width: inherit;
    position: sticky;
    top: 7rem;
    border: 1px solid var(--first-color-low);

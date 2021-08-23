@@ -1,4 +1,5 @@
 import React from 'react'
+import {Helmet} from 'react-helmet'
 import styles from './Home.module.css'
 import { GET_HOME } from '../Tmdb'
 import SliderMovies from './SliderMovies'
@@ -32,6 +33,10 @@ const Home = () => {
 
    return (
       <>
+         <Helmet>
+            <title>Letterboxd</title>
+         </Helmet>
+
          <section className={`${styles.home} container`}>
             <h2 className={styles.subtitle}>
                Bem Vindo. Aqui os filmes mais vistos da semana.

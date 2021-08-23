@@ -8,7 +8,7 @@ const Cast = ({ cast }) => {
    return (
       <ul className={styles.cast}>
          {cast.cast.map(actor => (
-            <Link key={actor.id} to={`/actor/${actor.id}`}>
+            <Link key={actor.id} to={`../../actor/${actor.id}`}>
                <li title={actor.character} className={styles.actor}>
                   {actor.name}
                </li>

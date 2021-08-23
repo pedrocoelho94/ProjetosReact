@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import useFetch from '../../Hooks/useFetch'
 import { GET_FILM } from '../../Tmdb'
@@ -64,6 +65,10 @@ const FilmDetails = () => {
    if (film === null || filmCast === null) return null
    return (
       <section className={styles.featured}>
+         <Helmet>
+            <title>{film.title} {`(${yearRelease})`}</title>
+         </Helmet>
+
          <div className={styles.horizontalRight}>
             <div className={styles.horizontalLeft}>
                <div className={styles.backdrop}>
@@ -96,7 +101,7 @@ const FilmDetails = () => {
 
                <p className={styles.tagline}>{film.tagline}</p>
                <p className={styles.overview}>{film.overview}</p>
-               <ExternalInformation id={id} runtime={film.runtime}/>
+               <ExternalInformation id={id} runtime={film.runtime} />
                <FilmHeader id={id} />
                {component}
             </section>
