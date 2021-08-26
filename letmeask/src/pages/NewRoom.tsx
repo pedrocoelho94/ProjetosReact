@@ -18,6 +18,10 @@ export function NewRoom() {
    async function handleCreateRoom(event: FormEvent) {
       event.preventDefault()
 
+      if(!user) {
+         return alert('Você precisa estar logado para criar uma sala!')
+      }
+
       if (newRoom.trim() === '') {
          return
       }

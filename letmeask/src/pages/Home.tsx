@@ -28,11 +28,14 @@ export function Home() {
    async function handleJoinRoom(event: FormEvent) {
       event.preventDefault()
 
-      if (roomCode.trim() === '') {
+      if (roomCode.trim() === '') return
+      
+      const roomRef = await database.ref(`rooms/${roomCode}`).get()
+
+      if (roomRef.val().endedAt) {
+         alert('Room already closed.')
          return
       }
-
-      const roomRef = await database.ref(`rooms/${roomCode}`).get()
 
       if (!roomRef.exists()) {
          alert('Room does not exists.')
