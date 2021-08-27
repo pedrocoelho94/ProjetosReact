@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "123",
+      "email": "pedrohenriquesc@gmail.com",
+      "password": "123",
+      "token": 123456789,
+      "watchedMovies": [
+        436969
+      ]
+    },
+    {
+      "username": "Sabrina",
+      "email": "sabrina@gmail.com",
+      "password": "123",
+      "token": 88216058632447,
+      "watchedMovies": [],
+      "id": 3
+    }
+  ]
+}

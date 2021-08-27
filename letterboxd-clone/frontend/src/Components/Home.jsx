@@ -1,5 +1,5 @@
 import React from 'react'
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 import styles from './Home.module.css'
 import { GET_HOME } from '../Tmdb'
 import SliderMovies from './SliderMovies'
@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom'
 import useFetch from '../Hooks/useFetch'
 import NewsBox from './NewsBox'
 
-const Home = () => {
+const Home = ({user}) => {
+   
    const { request } = useFetch()
    const [trend, setTrend] = React.useState(null)
    const [rated, setRated] = React.useState(null)
@@ -39,7 +40,7 @@ const Home = () => {
 
          <section className={`${styles.home} container`}>
             <h2 className={styles.subtitle}>
-               Bem Vindo. Aqui os filmes mais vistos da semana.
+               Bem Vindo {user ? user.username : 'visiante'}. Aqui os filmes mais vistos da semana.
             </h2>
 
             <div className="line">
@@ -53,7 +54,7 @@ const Home = () => {
 
             {trend && <SliderMovies films={trend} />}
          </section>
-         
+
          <section className={`container`}>
             <div className="line">
                <Link className="lineItem" to="/film">

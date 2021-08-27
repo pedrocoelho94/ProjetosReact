@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "pedrocoelho",
+      "email": "pedrohenriquesc@gmail.com",
+      "password": 123456,
+      "watchedMovies": [
+        436969
+      ]
+    },
+    {
+      "name": "Sabrina",
+      "email": "sabrina@gmail.com",
+      "password": "123",
+      "watchedMovies": [],
+      "id": 2
+    },
+    {
+      "name": "coelho",
+      "email": "coelho@coelho.gmail.com",
+      "password": "123",
+      "watchedMovies": [],
+      "id": 3
+    }
+  ]
+}

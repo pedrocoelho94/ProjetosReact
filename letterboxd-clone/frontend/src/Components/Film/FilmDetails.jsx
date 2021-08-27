@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import useFetch from '../../Hooks/useFetch'
 import { GET_FILM } from '../../Tmdb'
@@ -22,6 +22,8 @@ const FilmDetails = () => {
    const { request } = useFetch()
    const { pathname } = useLocation()
    const [component, setComponent] = useState(null)
+
+ 
 
    useEffect(() => {
       switch (pathname) {
@@ -61,6 +63,7 @@ const FilmDetails = () => {
       fetchFilms()
       fetchFilmsCredits()
    }, [request, id])
+
 
    if (film === null || filmCast === null) return null
    return (

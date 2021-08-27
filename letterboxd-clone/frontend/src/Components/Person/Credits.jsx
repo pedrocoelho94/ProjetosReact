@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import useFetch from '../../Hooks/useFetch'
 import { PERSON } from '../../Tmdb'
-import Loading from '../Loading'
+import Loading from '../Helpers/Loading'
 
 import styles from './Credits.module.css'
 
