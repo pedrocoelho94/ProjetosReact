@@ -1,0 +1,24 @@
+header {
+   height: 5rem;
+}
+
+.navbar {
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   .menu {
+      display: flex;
+      gap: 2rem;
+
+      a {
+         color: var(--first-color);
+         transition: color 0.2s;
+
+         &:hover {
+            color: var(--first-color-hover);
+         }
+      }
+   }
+}
